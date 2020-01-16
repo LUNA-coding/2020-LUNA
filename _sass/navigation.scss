@@ -42,7 +42,7 @@
     }
   }
 
-  &__menu-button {
+  &__side-menu-button {
     cursor: pointer;
     display: none;
 
@@ -51,8 +51,49 @@
     margin-left: auto;
   }
 
+  &__side-menu {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    height: 100%;
+    width: 15rem;
+
+    transform: translateX(15rem);
+    transition: transform 0.3s;
+
+    top: 0;
+    right: 0;
+    z-index: 3;
+
+    background-color: black;
+
+    &--visible {
+      transform: none;
+    }
+  }
+
+  &__side-overlay {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    height: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: black;
+    opacity: 0;
+    z-index: 2;
+
+    transition: opacity 0.3s;
+
+    &--visible {
+      opacity: 0.4;
+    }
+  }
+
   @media screen and (max-width: 800px) {
-    &__menu-button {
+    &__side-menu-button {
       display: block;
     }
 
