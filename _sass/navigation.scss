@@ -25,11 +25,19 @@
   }
 
   &__menu-item {
-    & + & {
-      margin-left: 2.5rem;
+    cursor: pointer;
+
+    color:#e9ecef;
+    opacity: 0.4;
+    font-size: 1.5rem;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
     }
 
-    color: #dee2e6;
-    font-size: 1.5rem;
+    & + & {
+      margin-left: 3rem;
+    }
   }
 }
