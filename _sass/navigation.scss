@@ -11,12 +11,17 @@
   }
 
   &__menu {
+    flex: 1;
     margin: 0 3rem;
     padding: 0;
 
     list-style-type: none;
     display: flex;
     flex-direction: row;
+
+    &--left {
+      justify-content: flex-end;
+    }
   }
 
   &__menu-item {
