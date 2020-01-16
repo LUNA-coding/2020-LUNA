@@ -1,14 +1,47 @@
 .home {
   height: 100%;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   &__bg-img {
     position: absolute;
-    bottom: 0;
+    width: 100%;
+    bottom: -10rem;
 
-    @media screen and (min-width: 1300px) {
-      bottom: -7rem; 
+    @media screen and (max-width: 1400px) {
+      bottom: -7rem;
     }
 
-    width: 100%;
+    @media screen and (max-width: 1000px) {
+      bottom: -5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      bottom: -2rem;
+    }
+
+    @media screen and (max-height: 400px) {
+      bottom: -3rem;
+    }
+  }
+
+  &__cali-img {
+    z-index: 1;
+
+    @media screen and (orientation: portrait) {
+      width: 75vw;
+      margin: 0 auto 12rem auto;
+    }
+
+    @media screen and (orientation: landscape) {
+      width: 30vw;
+      margin: 0 0 15rem 15rem;
+    }
+
+    @media screen and (max-height: 550px) {
+      display: none;
+    }
   }
 }
