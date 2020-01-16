@@ -40,8 +40,13 @@
       margin: 0 0 15rem 15rem;
     }
 
-    @media screen and (max-height: 550px) {
+    @media screen and (orientation: landscape) and (max-height: 500px) {
       display: none;
+    }
+
+    @media screen and (orientation: landscape) and (max-width: 800px) {
+      display: block;
+      margin: 0 auto 10rem auto;
     }
   }
 }
