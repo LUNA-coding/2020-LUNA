@@ -39,6 +39,7 @@ config: utf-8
 collections:
   members:
   awards:
+  item:
     
 # Exclude from processing.
 # The following items will not be processed, by default.
