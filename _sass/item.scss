@@ -1,0 +1,31 @@
+.item {
+    width:100%;
+    align: center;
+    text-align: center;
+    
+    &__container{
+        width: 20%;
+        background: white;  
+        display: inline-block;
+        border-radius: 10px;
+
+        margin: {
+            left: 30px;
+            top: 30px;
+            right: 30px;
+            bottom: 30px;
+        }
+
+        padding: {
+            left:10px;
+            top:10px;
+            right:10px;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        border-radius: 5px;
+    }
+
+}
