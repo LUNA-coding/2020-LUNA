@@ -88,6 +88,7 @@
     transition: opacity 0.3s;
 
     &--visible {
+      pointer-events: visible;
       opacity: 0.4;
     }
   }
