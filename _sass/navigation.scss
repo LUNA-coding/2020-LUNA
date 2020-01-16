@@ -53,7 +53,9 @@
 
   &__side-menu {
     margin: 0;
-    padding: 0;
+    padding: 2rem 2rem;
+    list-style-type: none;
+    box-sizing: border-box;
 
     position: absolute;
     height: 100%;
@@ -71,6 +73,21 @@
     &--visible {
       transform: none;
     }
+  }
+
+  &__side-menu-item {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    color: #f1f3f5;
+
+    border-bottom: 1px solid #868e96;
+  }
+
+  &__side-icon {
+    margin-right: 0.2rem;
+    width: 2rem;
+    text-align: center;
+    color: #868e96;
   }
 
   &__side-overlay {
