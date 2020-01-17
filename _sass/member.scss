@@ -1,32 +1,54 @@
 .member {
+  padding: 3rem;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  color: #f8f9fa;
+}
 
-  &__card {
-    width: 20rem;
-    background: rgba(255, 255, 255, 0.17);  
-
-    margin: {
-        left: 30px;
-        top: 30px;
-        right: 30px;
-        bottom: 30px;
-    }
-
-    padding: {
-        left:10px;
-        top:10px;
-        right:10px;
-    }
-  }
+.profile {
+  background-color: rgba(255, 255, 255, 0.17);  
+  padding: 2rem 3rem;
+  margin: 2rem;
+  width: 16rem;
 
   &__image {
+    flex: 0;
     width: 100%;
-    border-radius: 5px;
+    object-fit: contain;
   }
 
-  &__name{
+  &__name {
+    margin: 0.7rem 0 0 0;
+    text-align: center;
+  }
+
+  &__name-major {
+    font-size: 1rem;
+    font-weight: lighter;
+
+    color: #adb5bd;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__content {
+    font-family: 'NanumBarunpen', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+    margin: 0;
+    color: #ced4da;
+  }
+
+  &__quote {
+    font-size: 1.5rem;
+    color: #adb5bd;
+
+    position: relative;
+    left: -1.5rem;
+    bottom: -1rem;
   }
 }
