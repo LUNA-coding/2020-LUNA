@@ -1,32 +1,32 @@
 .member {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__card {
+    width: 20rem;
+    background: rgba(255, 255, 255, 0.17);  
+
+    margin: {
+        left: 30px;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    padding: {
+        left:10px;
+        top:10px;
+        right:10px;
+    }
+  }
+
+  &__image {
     width: 100%;
-    text-align: center;
+    border-radius: 5px;
+  }
 
-    &__container {
-        width: 20%;
-        background: white;  
-        display: inline-block;
-        border-radius: 10px;
-
-        margin: {
-            left: 30px;
-            top: 30px;
-            right: 30px;
-            bottom: 30px;
-        }
-
-        padding: {
-            left:10px;
-            top:10px;
-            right:10px;
-        }
-    }
-
-    &__image {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    &__name{
-    }
+  &__name{
+  }
 }
