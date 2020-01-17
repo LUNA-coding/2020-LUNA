@@ -1,13 +1,28 @@
 .member {
-  @media screen and (min-width: 927px) {
-    padding: 3rem;
+  @media screen and (max-width: 927px) {
+    padding: 0;
+    justify-content: center;
   }
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+
+
   color: #f8f9fa;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 9rem;
+    align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__grade {
+    font-size: 3rem;
+  }
 }
 
 .profile {
@@ -15,7 +30,7 @@
   background-color: rgba(255, 255, 255, 0.17);  
   padding: 2rem 3rem;
   margin: 2rem;
-  width: 18rem;
+  width: 15rem;
 
   @media screen and (max-width: 544px) {
     box-shadow: none;

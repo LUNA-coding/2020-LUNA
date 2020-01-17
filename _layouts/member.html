@@ -2,18 +2,28 @@
 layout: default
 ---
 <main class="member">
-  {% for member in site.members reversed %}
-  <div class="profile">
-    <div class="profile__tags">
-      {% for tag in member.tags %}
-      #{{tag}}
-      {% endfor %}
-    </div>
-    <img src="/assets/img/members/{{ member.name }}.png" class="profile__image">
-    <h1 class="profile__name">{{ member.name }}</h1>
-    <h2 class="profile__name-major">{{ member.grade }}{{ member.major }} | {{ member.role }}</h2>
-    <i class="fas fa-quote-left profile__quote"></i>
-    <p class="profile__content">{{ member.content | remove: '<p>' | remove: '</p>' }}</p>
+  {% assign second_members = site.members | where: "luna", 2.0 | sort: "name" %}
+  {% assign first_members = site.members | where: "luna", 1.0 | sort: "name" %}
+  {% assign honorary_members = site.members | where: "luna", 0.0 | sort: "name" %}
+
+  <h1 class="member__grade"><i class="fas fa-moon"></i> LUNA 2기</h1>
+  <div class="member__container">
+    {% for member in second_members %}
+    {% include profile.html member=member %}
+    {% endfor %}
   </div>
-  {% endfor %}
+
+  <h1 class="member__grade"><i class="fas fa-moon"></i> LUNA 1기</h1>
+  <div class="member__container">
+    {% for member in first_members %}
+    {% include profile.html member=member %}
+    {% endfor %}
+  </div>
+
+  <h1 class="member__grade"><i class="fas fa-award"></i> 명예 동아리원</h1>
+  <div class="member__container">
+    {% for member in honorary_members %}
+    {% include profile.html member=member %}
+    {% endfor %}
+  </div>
 </main>
