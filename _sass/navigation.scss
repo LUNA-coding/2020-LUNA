@@ -61,21 +61,19 @@
     list-style-type: none;
     box-sizing: border-box;
 
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 15rem;
 
-    transform: translateX(15rem);
-    transition: transform 0.3s;
-
     top: 0;
-    right: 0;
-    z-index: 3;
+    right: -15rem;
+    transition: right 0.3s;
 
+    z-index: 3;
     background-color: black;
 
     &--visible {
-      transform: none;
+      right: 0;
     }
   }
 

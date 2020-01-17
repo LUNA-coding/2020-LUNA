@@ -10,6 +10,9 @@ html, body {
 
   font-family: 'Noto Sans KR', sans-serif;
 
-  height: 100%;
-  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
 }
