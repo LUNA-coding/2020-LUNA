@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "bundle exec jekyll build && mv _site public"
+  }
+}
