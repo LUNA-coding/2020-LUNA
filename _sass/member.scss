@@ -14,6 +14,14 @@
   margin: 2rem;
   width: 16rem;
 
+  &__tags {
+    text-align: center;
+    font-family: 'NanumBarunpen', sans-serif;
+    color: #adb5bd;
+
+    margin-bottom: 1rem;
+  }
+
   &__image {
     flex: 0;
     width: 100%;

@@ -4,6 +4,11 @@ layout: default
 <main class="member">
   {% for member in site.members reversed %}
   <div class="profile">
+    <div class="profile__tags">
+      {% for tag in member.tags %}
+      #{{tag}}
+      {% endfor %}
+    </div>
     <img src="{{ member.image }}" class="profile__image">
     <h1 class="profile__name">{{ member.name }}</h1>
     <h2 class="profile__name-major">{{ member.grade }}{{ member.major }} | {{ member.role }}</h2>
