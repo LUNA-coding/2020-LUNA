@@ -28,8 +28,6 @@
   &__menu-item {
     cursor: pointer;
 
-    text-decoration: none;
-    color:#e9ecef;
     opacity: 0.4;
     font-size: 1.5rem;
     transition: opacity 0.3s;
@@ -40,6 +38,11 @@
 
     & + & {
       margin-left: 3rem;
+    }
+
+    a {
+      color: #e9ecef;
+      text-decoration: none;
     }
   }
 

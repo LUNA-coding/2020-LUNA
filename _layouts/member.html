@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-
-<body>
-    {% include navigation.html %}
-    <div class="member">
-        {% for member in site.members reversed %}
-            <div class="member__container">
-                <img src="{{ member.image }}" class="member__image">
-                <h3 class="member__name">{{ member.name }}</h3>
-                <h3 class="member__grade-major">{{ member.grade }}{{ member.major }}</h3>
-                <p class="member__comment">{{ member.content }}</p>
-            </div>
-        {% endfor %}
-    </div>    
-</body>
-</html>
+---
+layout: default
+---
+<main class="member">
+  {% for member in site.members reversed %}
+  <div class="member__container">
+    <img src="{{ member.image }}" class="member__image">
+    <h3 class="member__name">{{ member.name }}</h3>
+    <h3 class="member__grade-major">{{ member.grade }}{{ member.major }}</h3>
+    <p class="member__comment">{{ member.content }}</p>
+  </div>
+  {% endfor %}
+</main>

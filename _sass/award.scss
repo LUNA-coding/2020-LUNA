@@ -1,10 +1,10 @@
-$container-padding:30px;
+$container-padding: 30px;
 
-.award{
+.award {
     width:100%;
-    align: center;
     text-align: center;
-    &__container{
+
+    &__container {
         width: 25%;
         display: inline-block;
         background-color: white;
@@ -24,11 +24,11 @@ $container-padding:30px;
             bottom: #{$container-padding};
         }
     }
-    &__image{
+    &__image {
         max-width: 100%;
         border-radius: 15px;
     }
-    &__info{
 
+    &__info {
     }
 }

@@ -1,9 +1,8 @@
 .member {
     width: 100%;
-    align: center;
     text-align: center;
 
-    &__container{
+    &__container {
         width: 20%;
         background: white;  
         display: inline-block;
@@ -23,13 +22,11 @@
         }
     }
 
-    &__image{
+    &__image {
         width: 100%;
         border-radius: 5px;
     }
 
     &__name{
-        
     }
-
 }
