@@ -1,26 +1,26 @@
 <nav class="nav">
   <ul class="nav__menu nav__menu--left">
-    <li class="nav__menu-item">
-      <a>LUNA</a>
+    {% for item in site.navigation limit:3 %}
+    {% assign class = nil %}
+    {% if page.url contains item.url %}
+    {% assign class = 'nav__menu-item--current' %}
+    {% endif %}
+    <li class="nav__menu-item {{class}}">
+      <a href="{{item.url}}">{{item.title}}</a>
     </li>
-    <li class="nav__menu-item">
-      <a href="/member.html">Member</a>
-    </li>
-    <li class="nav__menu-item">
-      <a href="/item.html">Item</a>
-    </li>
+    {% endfor %}
   </ul>
   <a href="{{ site.baseurl }}/../"><img class="nav__logo" src="/assets/img/luna_logo.png"></a>
   <ul class="nav__menu nav__menu--right">
-    <li class="nav__menu-item">
-      <a href="/award.html">Award</a>
+    {% for item in site.navigation offset:3 limit:3 %}
+    {% assign class = nil %}
+    {% if page.url contains item.url %}
+    {% assign class = 'nav__menu-item--current' %}
+    {% endif %}
+    <li class="nav__menu-item {{class}}">
+      <a href="{{item.url}}">{{item.title}}</a>
     </li>
-    <li class="nav__menu-item">
-      <a>Gallery</a>
-    </li>
-    <li class="nav__menu-item">
-      <a>FAQ</a>
-    </li>
+    {% endfor %}
   </ul>
 
   <div class="nav__side-menu-button">
@@ -28,30 +28,12 @@
   </div>
 
   <ul class="nav__side-menu">
-    <li class="nav__side-menu-item">
-      <i class="fas fa-moon nav__side-icon"></i>
-      LUNA
+    {% for item in site.navigation %}
+    <li class="nav__side-menu-item {{class}}">
+      <i class="fas {{item.icon}} nav__side-icon"></i>
+      <a href="{{item.url}}">{{item.title}}</a>
     </li>
-    <li class="nav__side-menu-item">
-      <i class="fas fa-users nav__side-icon"></i>
-      Member
-    </li>
-    <li class="nav__side-menu-item">
-      <i class="fas fa-lightbulb nav__side-icon"></i>
-      Item
-    </li>
-    <li class="nav__side-menu-item">
-      <i class="fas fa-trophy nav__side-icon"></i>
-      Award
-    </li>
-    <li class="nav__side-menu-item">
-      <i class="fas fa-images nav__side-icon"></i>
-      Gallery
-    </li>
-    <li class="nav__side-menu-item">
-      <i class="fas fa-question-circle nav__side-icon"></i>
-      FAQ
-    </li>
+    {% endfor %}
   </ul>
 
   <div class="nav__side-overlay"></div>

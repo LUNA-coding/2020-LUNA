@@ -44,6 +44,10 @@
       color: #e9ecef;
       text-decoration: none;
     }
+
+    &--current {
+      opacity: 1;
+    }
   }
 
   &__side-menu-button {
@@ -80,7 +84,11 @@
   &__side-menu-item {
     font-size: 1.3rem;
     padding: 1rem 0;
-    color: #f1f3f5;
+
+    a {
+      color: #f1f3f5;
+      text-decoration: none;
+    }
 
     border-bottom: 1px solid #868e96;
   }

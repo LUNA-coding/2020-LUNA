@@ -40,6 +40,31 @@ collections:
   members:
   awards:
   items:
+
+navigation:
+  - title: LUNA
+    url: /luna.html
+    icon: fa-moon
+
+  - title: Member
+    url: /member.html
+    icon: fa-users
+
+  - title: Item
+    url: /item.html
+    icon: fa-lightbulb
+
+  - title: Award
+    url: /award.html
+    icon: fa-trophy
+
+  - title: Gallery
+    url: /gallery.html
+    icon: fa-images
+
+  - title: FAQ
+    url: /faq.html
+    icon: fa-question-circle
     
 # Exclude from processing.
 # The following items will not be processed, by default.
