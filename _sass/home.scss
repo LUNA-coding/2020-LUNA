@@ -31,13 +31,13 @@
     z-index: 1;
 
     @media screen and (orientation: portrait) {
-      width: 60vw;
-      margin: 0 auto 12rem auto;
+      width: 80vw;
+      margin: 0 auto 8rem auto;
     }
 
     @media screen and (orientation: landscape) {
       width: 35vw;
-      margin: 0 0 15rem 15rem;
+      margin: 0 0 11rem 17rem;
     }
 
     @media screen and (orientation: landscape) and (max-height: 500px) {
@@ -46,7 +46,7 @@
 
     @media screen and (orientation: landscape) and (max-width: 800px) {
       display: block;
-      margin: 0 auto 10rem auto;
+      margin: 0 auto 7rem auto;
     }
   }
 }
