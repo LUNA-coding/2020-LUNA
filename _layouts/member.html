@@ -9,7 +9,7 @@ layout: default
       #{{tag}}
       {% endfor %}
     </div>
-    <img src="{{ member.image }}" class="profile__image">
+    <img src="/assets/img/members/{{ member.name }}.png" class="profile__image">
     <h1 class="profile__name">{{ member.name }}</h1>
     <h2 class="profile__name-major">{{ member.grade }}{{ member.major }} | {{ member.role }}</h2>
     <i class="fas fa-quote-left profile__quote"></i>

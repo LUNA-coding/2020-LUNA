@@ -15,9 +15,10 @@
   background-color: rgba(255, 255, 255, 0.17);  
   padding: 2rem 3rem;
   margin: 2rem;
-  width: 16rem;
+  width: 18rem;
 
   @media screen and (max-width: 544px) {
+    box-shadow: none;
     padding: 2rem 1rem;
     margin: 0.5rem 2rem;
     background: none;
@@ -35,6 +36,8 @@
     flex: 0;
     width: 100%;
     object-fit: contain;
+
+    border-radius: 40px;
   }
 
   &__name {
@@ -52,11 +55,14 @@
   }
 
   &__content {
+    width: 95%;
+    margin: 0 auto;
+    word-break: keep-all;
+
     font-family: 'NanumBarunpen', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
 
-    margin: 0;
     color: #ced4da;
   }
 
