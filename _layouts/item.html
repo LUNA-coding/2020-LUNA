@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    {% include navigation.html %}
+    <div class="item">
+        {% for item in site.items reversed %}
+            <div class="item__container">
+                <img src="{{ item.image }}" class="item__image">
+                <div class="item__info">
+                    <h3 class="item__name">{{ item.description }}, {{ item.title }}</h3>
+                    <p class="item__teamInfo">{{ item.title }}은(는){{ item.content }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>    
+</body>
+</html>
