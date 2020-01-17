@@ -2,7 +2,9 @@
 <div class="profile">
   <div class="profile__tags">
     {% for tag in member.tags %}
-    #{{tag}}
+    <span class="profile__tag">
+      #{{tag}}
+    </span>
     {% endfor %}
   </div>
   <img src="/assets/img/members/{{ member.name }}.png" class="profile__image">
