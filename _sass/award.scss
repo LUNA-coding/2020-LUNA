@@ -26,12 +26,29 @@ $container-padding: 0px;
             right: #{$container-padding};
             bottom: #{$container-padding};
         }
+
+        @media screen and (max-width: 1200px) {
+            width: 40%;
+        }
+        @media screen and (orientation: portrait) and (max-width: 500px) {
+            width: 80%;
+        }
     }
     &__image {
         max-width: 100%;
         border-radius: 15px;
         opacity: 0.3;
         transition: 0.3s;
+
+        @media screen and (max-width: 1200px) {
+            max-height: 100%;
+            max-width: initial;
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 500px) {
+            max-height: 100%;
+            max-width: initial;
+        }
     }
 
     &__image:hover{
@@ -50,7 +67,7 @@ $container-padding: 0px;
         height: fit-content;
     }
     &__name{
-        font-size: 100%;
+        font-size: 150%;
     }
     &__prize {
         font-size: 200%;
