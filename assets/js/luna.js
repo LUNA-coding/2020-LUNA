@@ -1,4 +1,4 @@
 new fullpage('#fullpage', {
-	//options here
-  licenseKey: typeof process === 'undefined' ? 'OPEN-SOURCE-GPLV3-LICENSE' : process.env.fullpageLicense,
+  //options here
+  licenseKey: 'OPEN-SOURCE-GPL3-LICENSE'
 });

@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "bundle exec jekyll build && mv _site public"
+    "build": "JEKYLL_ENV=production bundle exec jekyll build"
   },
   "build": {
     "env": {
