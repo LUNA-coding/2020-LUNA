@@ -10,7 +10,11 @@
     {% when 3 %}{% assign day_string = '부터 사흘동안' %}
     {% when 4 %}{% assign day_string = '부터 나흘동안' %}
     {% endcase %}
-    <h3 class="award-card__date">{{ award_date }}{{ day_string }}</h3>
-    <p class="award-card__teamInfo">{{ award.team }}팀 : {{ award.member }}</p>
+    <div class="award-card__details">
+      <div class="award-card__date"><i class="far fa-calendar award-card__icon"></i> {{ award_date }}{{ day_string }}
+      </div>
+      <div class="award-card__teamInfo"><i class="fas fa-users award-card__icon"></i> {{ award.team }} 팀 :
+        {{ award.member }}</div>
+    </div>
   </div>
 </div>
