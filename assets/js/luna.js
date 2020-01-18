@@ -11,9 +11,21 @@ new fullpage('.luna', {
       selector = ".second" 
       destNum = 24;
     }
-    else if (dest.index == 2) {
+    else if (dest.index === 2) {
       selector = ".third";
       destNum = 23;
+    }
+    else if (dest.index === 3) {
+      selector = ".fourth";
+      destNum = 42;
+    }
+    else if (dest.index === 4) {
+      selector = ".fifth";
+      destNum = 3630;
+    } 
+    else if (dest.index === 5) {
+      selector = ".last";
+      destNum = 8;
     }
     else {
       return true;
@@ -24,12 +36,27 @@ new fullpage('.luna', {
       elem.classList.add("to-animate--active")
     });
 
-    anime({
-      targets: selector + " .number",
-      textContent: destNum,
-      easing: 'easeOutSine',
-      round: 1, 
-      duration: 2000,
-    });
+    if (dest.index === 5) {
+      anime({
+        targets: selector + " .number",
+        textContent: destNum,
+        easing: 'easeOutSine',
+        round: 1, 
+        duration: 2000,
+        complete: function(anim) {
+          var number = document.querySelector(selector + " .number");
+          number.classList.add("number--rotated");
+        }
+      });
+    }
+    else {
+      anime({
+        targets: selector + " .number",
+        textContent: destNum,
+        easing: 'easeOutSine',
+        round: 1, 
+        duration: 2000,
+      });
+    }
   }
 });
