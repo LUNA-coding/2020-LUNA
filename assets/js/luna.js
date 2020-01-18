@@ -9,7 +9,11 @@ new fullpage('.luna', {
     var destNum = 0;
     if (dest.index === 1) {
       selector = ".second" 
-      destNum = 21;
+      destNum = 24;
+    }
+    else if (dest.index == 2) {
+      selector = ".third";
+      destNum = 30;
     }
     else {
       return true;
@@ -25,7 +29,7 @@ new fullpage('.luna', {
       textContent: destNum,
       easing: 'easeOutSine',
       round: 1, 
-      duration: 3000,
+      duration: 2000,
     });
   }
 });

@@ -113,6 +113,16 @@
   }
 }
 
+.third {
+  .number {
+    line-height: 30rem;
+    background-image: url('/assets/img/items.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 .number {
   position: relative;
 
