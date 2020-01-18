@@ -1,0 +1,11 @@
+{% assign award = include.award %}
+{% assign award_date = award.date | date: "%Y년 %m월 %d일" %}
+<div class="award__container">
+    <img src="assets/img/awards/{{ award.title }}.jpg" class="award__image">
+    <div class="award__info">
+    <h3 class="award__name">{{ award.title }}</h3>
+    <h2 class="award__prize">{{ award.prize }}</h2>
+    <h3 class="award__date">{{ award_date }}부터 {{ award.days }}일간</h3>
+    <p class="award__teamInfo">{{ award.team }}팀 : {{ award.member }}</p>
+    </div>
+</div>

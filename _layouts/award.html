@@ -1,18 +1,17 @@
 ---
 layout: default
 ---
-
 <main class="award">
-  {% for award in site.awards reversed %}
-  {% assign award_date = award.date | date: "%Y년 %m월 %d일" %}
-  <div class="award__container">
-    <img src="{{ award.image }}" class="award__image">
-    <div class="award__info">
-      <h3 class="award__name">{{ award.title }}</h3>
-      <h2 class="award__prize">{{ award.prize }}</h2>
-      <h3 class="award__date">{{ award_date }}부터 {{ award.days }}일간</h3>
-      <p class="award__teamInfo">{{ award.team }}팀 : {{ award.member }}</p>
-    </div>
-  </div>
+  {% assign 2019_awards = site.awards | where: "year", 2019.0 | sort: "title"%}
+  {% assign 2018_awards = site.awards | where: "year", 2018.0 | sort: "title"%}
+
+  <h1 class="award__grade"><i class="fas fa-trophy"></i> 2019년</h1>
+  {% for award in 2019_awards %}
+  {% include prize.html award=award %}
+  {% endfor %}
+
+  <h1 class="award__grade"><i class="fas fa-trophy"></i> 2018년</h1>
+  {% for award in 2018_awards %}
+  {% include prize.html award=award %}
   {% endfor %}
 </main>
