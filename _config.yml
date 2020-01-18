@@ -11,6 +11,7 @@ destination: ./_site
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-autoprefixer
 
 config: utf-8
 

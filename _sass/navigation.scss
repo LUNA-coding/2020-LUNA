@@ -69,8 +69,6 @@
   }
 
   &__side-menu {
-    overflow: scroll;
-
     margin: 0;
     padding: 2rem 2rem;
     list-style-type: none;
@@ -128,6 +126,7 @@
     z-index: 2;
 
     transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
 
     &--visible {
       pointer-events: visible;

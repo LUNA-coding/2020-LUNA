@@ -32,7 +32,7 @@
 
     @media screen and (orientation: portrait) {
       width: 80vw;
-      margin: 0 auto 8rem auto;
+      margin: 0 auto 4rem auto;
     }
 
     @media screen and (orientation: landscape) {
@@ -45,7 +45,6 @@
     }
 
     @media screen and (orientation: landscape) and (max-width: 800px) {
-      display: block;
       margin: 0 auto 7rem auto;
     }
   }

@@ -15,7 +15,6 @@ new fullpage('.luna', {
     }
 
     var toAnimateList = document.querySelectorAll(selector + " .to-animate");
-    console.log(toAnimateList)
     toAnimateList.forEach(function(elem) {
       elem.classList.add("to-animate--active")
     });
