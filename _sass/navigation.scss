@@ -69,6 +69,8 @@
   }
 
   &__side-menu {
+    overflow-y: scroll;
+
     margin: 0;
     padding: 2rem 2rem;
     list-style-type: none;
@@ -106,32 +108,21 @@
     }
   }
 
+  &__side-menu-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__side-menu-close {
+    font-size: 2rem;
+    color: #ced4da;
+  }
+
   &__side-icon {
     margin-right: 0.2rem;
     width: 2rem;
     text-align: center;
     color: #868e96;
-  }
-
-  &__side-overlay {
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    height: 0;
-    height: 100%;
-    width: 100%;
-
-    background-color: black;
-    opacity: 0;
-    z-index: 2;
-
-    transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-
-    &--visible {
-      pointer-events: visible;
-      opacity: 0.4;
-    }
   }
 
   @media screen and (max-width: 850px) {

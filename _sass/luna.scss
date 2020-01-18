@@ -1,8 +1,10 @@
 .luna {
   color: #f8f9fa;
+  margin-top: 10rem;
 
   &__section {
     padding: 0 2rem;
+    margin-bottom: 10rem;
   }
 
   &__desc {
@@ -78,9 +80,9 @@
       font-size: 1rem;
     } 
 
-    &__line-logo {
-      display: none; 
-    }
+    // &__line-logo {
+    //   display: none; 
+    // }
 
     &__cali {
       width: 70vw;
@@ -104,9 +106,9 @@
 
 .second {
   .number {
-    background-image: url(/assets/img/crew.png);
+    background-image: url('/assets/img/crew.png');
     background-size: contain;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
   }
 }
@@ -123,7 +125,7 @@
 .to-animate {
   opacity: 0;
   color: #adb5bd;
-  transition: opacity 1s 1s;
+  transition: opacity 2s;
 
   &--active {
     opacity: 1;

@@ -2,7 +2,8 @@ new fullpage('.luna', {
   //options here
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   sectionSelector: '.luna__section',
-  autoScrolling: true,
+  autoScrolling: false,
+  fitToSection: false,
   onLeave: function(origin, dest, dir) {
     var selector = "";
     var destNum = 0;

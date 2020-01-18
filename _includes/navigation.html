@@ -28,6 +28,9 @@
   </div>
 
   <ul class="nav__side-menu">
+    <div class="nav__side-menu-container">
+      <i class="fas fa-times nav__side-menu-close"></i>
+    </div>
     {% for item in site.navigation %}
     <li class="nav__side-menu-item {{class}}">
       <i class="fas {{item.icon}} nav__side-icon"></i>
@@ -35,6 +38,4 @@
     </li>
     {% endfor %}
   </ul>
-
 </nav>
-<div class="nav__side-overlay"></div>
