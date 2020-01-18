@@ -1,13 +1,16 @@
-$container-padding: 30px;
+$container-padding: 0px;
 
 .award {
     width: 100%;
     text-align: center;
 
     &__container {
+        height: 300px;
+        overflow: hidden;
         width: 25%;
         display: inline-block;
-        background-color: white;
+        position: relative;
+        background-color: black;
         border-radius: 15px;
 
         margin : {
@@ -23,12 +26,53 @@ $container-padding: 30px;
             right: #{$container-padding};
             bottom: #{$container-padding};
         }
+
+        @media screen and (max-width: 1200px) {
+            width: 40%;
+        }
+        @media screen and (orientation: portrait) and (max-width: 500px) {
+            width: 80%;
+        }
     }
     &__image {
         max-width: 100%;
         border-radius: 15px;
+        opacity: 0.3;
+        transition: 0.3s;
+
+        @media screen and (max-width: 1200px) {
+            max-height: 100%;
+            max-width: initial;
+        }
+
+        @media screen and (orientation: portrait) and (max-width: 500px) {
+            max-height: 100%;
+            max-width: initial;
+        }
+    }
+
+    &__image:hover{
+        opacity: 0.8;
+        transition: 0.3s;
     }
 
     &__info {
+        position: absolute;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: white;
+        width: 90%;
+        height: fit-content;
+    }
+    &__name{
+        font-size: 150%;
+    }
+    &__prize {
+        font-size: 200%;
+    }
+    &__date{
+        line-height: 0%;
     }
 }
