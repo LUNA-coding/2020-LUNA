@@ -6,12 +6,16 @@ layout: default
   {% assign awards_2018 = site.awards | where: "year", 2018.0 | sort: "title" %}
 
   <h1 class="award__grade"><i class="fas fa-trophy"></i> 2019년</h1>
-  {% for award in awards_2019 %}
-  {% include award_card.html award=award %}
-  {% endfor %}
+  <div class="award__container">
+    {% for award in awards_2019 %}
+    {% include award_card.html award=award %}
+    {% endfor %}
+  </div>
 
   <h1 class="award__grade"><i class="fas fa-trophy"></i> 2018년</h1>
-  {% for award in awards_2018 %}
-  {% include award_card.html award=award %}
-  {% endfor %}
+  <div class="award__container">
+    {% for award in awards_2018 %}
+    {% include award_card.html award=award %}
+    {% endfor %}
+  </div>
 </main>
