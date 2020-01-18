@@ -1,5 +1,6 @@
 ---
 layout: award
+year: 2019
 days: 2
 prize: 대상, 최우수상
 team: 양변에 로그를 취해, LUNA
