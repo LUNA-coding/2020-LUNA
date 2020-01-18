@@ -82,7 +82,8 @@ $container-padding: 0px;
   }
 
   &__prize {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    word-break: keep-all;
   }
 
   &__details {
@@ -90,9 +91,23 @@ $container-padding: 0px;
     font-size: 1.1rem;
   }
 
+  &__teaminfo {
+    word-break: keep-all;
+  }
+
   &__icon {
     width: 1.3rem;
     text-align: center;
     margin-right: 0.3rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    &__info {
+      padding: 0 1rem;
+    }
+
+    &__details {
+      display: none;
+    }
   }
 }
