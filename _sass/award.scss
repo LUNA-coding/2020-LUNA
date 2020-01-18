@@ -13,6 +13,10 @@ $container-padding: 0px;
     justify-content: center;
   }
 
+  &__grade {
+    color: #f8f9fa;
+    font-size: 3rem;
+  }
 }
 
 .award-card {
@@ -60,7 +64,7 @@ $container-padding: 0px;
     color: #f8f9fa;
 
     background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s;
+    transition: all 0.2s;
 
     height: 100%;
     border-radius: 15px;
@@ -72,6 +76,7 @@ $container-padding: 0px;
 
     &:hover {
       background-color: transparent;
+      opacity: 0;
     }
   }
 
