@@ -3,6 +3,7 @@ $container-padding: 0px;
 .award {
   width: 100%;
   text-align: center;
+  padding: 7rem 0;
 
   &__container {
     height: 300px;
@@ -36,7 +37,9 @@ $container-padding: 0px;
   }
 
   &__image {
+    width: 100%;
     object-fit: cover;
+
     border-radius: 15px;
     opacity: 0.3;
     transition: 0.3s;
