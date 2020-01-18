@@ -13,7 +13,7 @@ new fullpage('.luna', {
     }
     else if (dest.index == 2) {
       selector = ".third";
-      destNum = 30;
+      destNum = 23;
     }
     else {
       return true;
