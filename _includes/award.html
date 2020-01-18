@@ -7,9 +7,9 @@
         <h2 class="award__prize">🏆{{ award.prize }}🏆</h2>
         {% case award.days %}
             {% when 1 %}{% assign day_string = ' 하루동안' %}
-            {% when 2 %}{% assign day_string = '부터 이틀간' %}
-            {% when 3 %}{% assign day_string = '부터 사흘간' %}
-            {% when 4 %}{% assign day_string = '부터 나흘간' %}
+            {% when 2 %}{% assign day_string = '부터 이틀동안' %}
+            {% when 3 %}{% assign day_string = '부터 사흘동안' %}
+            {% when 4 %}{% assign day_string = '부터 나흘동안' %}
         {% endcase %}
         <h3 class="award__date">{{ award_date }}{{ day_string }}</h3>
         <p class="award__teamInfo">{{ award.team }}팀 : {{ award.member }}</p>
