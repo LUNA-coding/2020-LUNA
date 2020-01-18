@@ -1,9 +1,10 @@
-$container-padding: 0px;
-
 .award {
-  width: 100%;
   text-align: center;
-  padding: 7rem 0;
+  padding: 7rem 2rem;
+
+  @media screen and (max-width: 500px) {
+    padding: 7rem 0.5rem;
+  }
 
   &__container {
     display: flex;
@@ -28,19 +29,7 @@ $container-padding: 0px;
 
   border-radius: 15px;
 
-  margin : {
-    left: 30px;
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-  }
-
-  padding : {
-    left: #{$container-padding};
-    top: #{$container-padding};
-    right: #{$container-padding};
-    bottom: #{$container-padding};
-  }
+  margin: 1.5rem;
 
   &__image {
     width: 100%;
@@ -49,15 +38,6 @@ $container-padding: 0px;
 
     border-radius: 15px;
     opacity: 0.3;
-
-    @media screen and (max-width: 1200px) {
-      max-height: 100%;
-    }
-
-    @media screen and (orientation: portrait) and (max-width: 500px) {
-      max-height: 100%;
-    }
-
   }
 
   &__info {
@@ -84,6 +64,9 @@ $container-padding: 0px;
     margin: 0;
     font-size: 1.3rem;
     word-break: keep-all;
+
+    color: #e9ecef;
+    font-weight: normal;
   }
 
   &__prize {
@@ -106,7 +89,7 @@ $container-padding: 0px;
     margin-right: 0.3rem;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     &__info {
       padding: 0 1rem;
     }
