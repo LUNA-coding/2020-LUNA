@@ -3,6 +3,7 @@
 
   &__section {
     padding: 3rem 2rem;
+    text-align: center;
   }
 
   &__desc {
@@ -148,8 +149,21 @@
   }
 }
 
+.last {
+  margin-bottom: 10rem;
+
+  .number {
+    transition: all 1s;
+  }
+
+  .number--rotated {
+    transform: rotate(90deg);
+  }
+}
+
 .number {
-  position: relative;
+  display: inline-block;
+  width: 30rem;
 
   z-index: 10;
   font-size: 10rem;
