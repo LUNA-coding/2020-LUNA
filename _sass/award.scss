@@ -5,35 +5,36 @@ $container-padding: 0px;
   text-align: center;
   padding: 7rem 0;
 
-  &__container {
-    height: 300px;
-    overflow: hidden;
-    width: 25%;
-    display: inline-block;
-    position: relative;
-    background-color: black;
-    border-radius: 15px;
+}
 
-    margin : {
-      left: 30px;
-      top: 30px;
-      right: 30px;
-      bottom: 30px;
-    }
+.award-card {
+  height: 300px;
+  overflow: hidden;
+  width: 25%;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  border-radius: 15px;
 
-    padding : {
-      left: #{$container-padding};
-      top: #{$container-padding};
-      right: #{$container-padding};
-      bottom: #{$container-padding};
-    }
+  margin : {
+    left: 30px;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+  }
 
-    @media screen and (max-width: 1200px) {
-      width: 40%;
-    }
-    @media screen and (orientation: portrait) and (max-width: 500px) {
-      width: 80%;
-    }
+  padding : {
+    left: #{$container-padding};
+    top: #{$container-padding};
+    right: #{$container-padding};
+    bottom: #{$container-padding};
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 40%;
+  }
+  @media screen and (orientation: portrait) and (max-width: 500px) {
+    width: 80%;
   }
 
   &__image {

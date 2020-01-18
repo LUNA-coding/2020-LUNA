@@ -7,11 +7,11 @@ layout: default
 
   <h1 class="award__grade"><i class="fas fa-trophy"></i> 2019년</h1>
   {% for award in awards_2019 %}
-  {% include award.html award=award %}
+  {% include award_card.html award=award %}
   {% endfor %}
 
   <h1 class="award__grade"><i class="fas fa-trophy"></i> 2018년</h1>
   {% for award in awards_2018 %}
-  {% include award.html award=award %}
+  {% include award_card.html award=award %}
   {% endfor %}
 </main>
