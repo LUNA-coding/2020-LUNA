@@ -1,0 +1,94 @@
+.luna {
+  color: #f8f9fa;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+}
+
+.first {
+  padding: 0 14rem;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__line-logo {
+    width: 17rem;
+  }
+
+  &__cali {
+    width: 30rem;
+    margin-left: 2rem;
+  }
+
+  &__desc {
+    word-break: keep-all;
+
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    text-align: left;
+
+    font-size: 1.2rem;
+    color: #ced4da;
+
+    border-left: 2px solid #868e96;
+    padding-left: 1rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__desc {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+
+    &__cali {
+      width: 40vw;
+      margin: 0 0 0 1rem;
+    }
+
+    &__line-logo {
+      width: 20vw;
+    }
+  }
+
+  @media screen and (orientation: portrait) and (max-width: 768px) {
+    &__desc {
+      word-break: break-all;
+      font-size: 1rem;
+    } 
+
+    &__line-logo {
+      display: none; 
+    }
+
+    &__cali {
+      width: 70vw;
+    }
+  }
+
+  @media screen and (orientation: landscape) and (max-height: 450px) {
+    &__desc {
+      margin: 0 auto;
+      margin-top: 2rem;
+
+      font-size: 1rem;
+      margin-bottom: auto;
+    }
+
+    &__cali {
+      width: 30vw;
+    }
+  }
+}

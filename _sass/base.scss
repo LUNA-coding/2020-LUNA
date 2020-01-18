@@ -3,7 +3,6 @@
 
 html, body {
   margin: 0;
-  padding: 0;
 
   background: #6441A5;  /* fallback for old browsers */
   background: -webkit-radial-gradient(#6441A5, #2a0845);  /* Chrome 10-25, Safari 5.1-6 */
@@ -15,4 +14,8 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+body {
+  padding: 6rem 0;
 }
