@@ -5,7 +5,13 @@
     <div class="award__info">
         <h3 class="award__name">{{ award.title }}</h3>
         <h2 class="award__prize">🏆{{ award.prize }}🏆</h2>
-        <h3 class="award__date">{{ award_date }}부터 {{ award.days }}일간</h3>
+        {% case award.days %}
+            {% when 1 %}{% assign day_string = ' 하루동안' %}
+            {% when 2 %}{% assign day_string = '부터 이틀간' %}
+            {% when 3 %}{% assign day_string = '부터 사흘간' %}
+            {% when 4 %}{% assign day_string = '부터 나흘간' %}
+        {% endcase %}
+        <h3 class="award__date">{{ award_date }}{{ day_string }}</h3>
         <p class="award__teamInfo">{{ award.team }}팀 : {{ award.member }}</p>
     </div>
 </div>
