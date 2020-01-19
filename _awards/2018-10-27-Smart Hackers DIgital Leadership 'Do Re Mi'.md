@@ -4,5 +4,5 @@ year: 2018
 days: 2
 prize: 우수상
 team: LUNA
-member: LUNA멤버
+member: 박평진, 이현선
 ---
