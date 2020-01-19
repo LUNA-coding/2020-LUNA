@@ -1,6 +1,6 @@
 {% assign award = include.award %}
 {% assign award_date = award.date | date: "%Y년 %m월 %d일" %}
-<div class="award-card" style="background-image: url('assets/img/awards/{{ award.title | downcase }}.jpg')">
+<div class="award-card" style="background-image: url('assets/img/awards/{{ award.year }}-{{ award.title | downcase }}.jpg')">
   <div class="award-card__info">
     <h3 class="award-card__name">{{ award.title | upcase }}</h3>
     <h2 class="award-card__prize">🏆{{ award.prize }}🏆</h2>
