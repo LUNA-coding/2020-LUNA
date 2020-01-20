@@ -42,7 +42,7 @@
   &__info {
     color: #f8f9fa;
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.2s;
 
     height: 100%;
@@ -94,6 +94,10 @@
     }
 
     &__details {
+      padding: 0 1rem;
+    }
+
+    &__date {
       display: none;
     }
   }
