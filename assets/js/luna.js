@@ -2,7 +2,8 @@ new fullpage('.luna', {
   //options here
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   sectionSelector: '.luna__section',
-  autoScrolling: false,
+  autoScrolling: true,
+  verticalCentered: true,
   fitToSection: false,
   onLeave: function(origin, dest, dir) {
     var selector = "";
@@ -17,7 +18,7 @@ new fullpage('.luna', {
     }
     else if (dest.index === 3) {
       selector = ".fourth";
-      destNum = 42;
+      destNum = 31;
     }
     else if (dest.index === 4) {
       selector = ".fifth";
