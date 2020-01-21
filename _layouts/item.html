@@ -2,7 +2,7 @@
 layout: default
 ---
 <main class="item">
-  {% for item in site.items %}
+  {% for item in site.items reversed %}
   {% include item_card.html item_card=item %}
   {% endfor %}
 </main>

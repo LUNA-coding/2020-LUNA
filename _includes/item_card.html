@@ -4,5 +4,10 @@
   <div class="item-card__container">
     <h1 class="item-card__name">{{item.name}}</h1>
     <p class="item-card__desc">{{item.description}}</p>
+    <ul class="item-card__award-list">
+      {% for award in item.award %}
+      <li class="item-card__award">🏆 {{award}}</li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

@@ -37,6 +37,17 @@
   &__desc {
     color: #adb5bd;  
     font-size: 1.2rem;
+
+    margin-top: 0;
+  }
+
+  &__award-list {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__award {
+    color: #ffe066;
   }
 
   @media screen and (max-width: 850px) {
