@@ -8,6 +8,7 @@
 
   &__desc {
     word-break: keep-all;
+    color: #ced4da;
     text-align: center;
     font-size: 1.4rem;
 
@@ -172,7 +173,6 @@
 
 .to-animate {
   opacity: 0;
-  color: #adb5bd;
   transition: opacity 2s;
 
   &--active {

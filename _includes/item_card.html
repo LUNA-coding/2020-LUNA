@@ -2,7 +2,7 @@
 <div class="item-card">
   <img class="item-card__logo" src="/assets/img/items/{{item.title | downcase}}.png">
   <div class="item-card__container">
-    <h1 class="item-card__name">{{item.name}}</h1>
+    <h2 class="item-card__name">{{item.name}}</h2>
     <p class="item-card__desc">{{item.description}}</p>
     <ul class="item-card__award-list">
       {% for award in item.award %}
