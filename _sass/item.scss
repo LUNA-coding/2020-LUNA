@@ -1,5 +1,5 @@
 .item {
-  padding: 8rem 0;
+  padding: 10rem 0;
 
   width: 100%;
 
@@ -14,7 +14,7 @@
   flex-direction: row;
 
   width: 60%;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   
   &__logo {
     min-width: 10rem;
@@ -23,7 +23,7 @@
     max-height: 10rem;
     object-fit: contain;
 
-    margin: auto 2rem;
+    margin: auto 2.5rem;
   }
 
   &__name {
@@ -31,11 +31,23 @@
     font-weight: bold;
     font-size: 3rem;
 
-    margin: 1rem 0;
+    margin: 0;
   }
 
   &__desc {
     color: #adb5bd;  
     font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 80%;
+
+    flex-direction: column;
+    align-items: center;
+
+    &__name {
+      text-align: center;
+      margin-top: 1rem;
+    }
   }
 }
