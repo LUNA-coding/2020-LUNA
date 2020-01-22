@@ -7,21 +7,21 @@ layout: default
   {% assign first_members = site.members | where: "luna", 1.0 | sort: "name" %}
   {% assign honorary_members = site.members | where: "luna", 0.0 | sort: "name" %}
 
-  <h1 class="member__grade"><i class="fas fa-moon"></i> LUNA 3기</h1>
+  <h1 class="member__grade"><i class="fas fa-moon member__icon"></i>LUNA 3기</h1>
   <div class="member__container">
     {% for member in third_members %}
     {% include profile.html member=member %}
     {% endfor %}
   </div>
 
-  <h1 class="member__grade"><i class="fas fa-moon"></i> LUNA 2기</h1>
+  <h1 class="member__grade"><i class="fas fa-moon member__icon"></i>LUNA 2기</h1>
   <div class="member__container">
     {% for member in second_members %}
     {% include profile.html member=member %}
     {% endfor %}
   </div>
 
-  <h1 class="member__grade"><i class="fas fa-moon"></i> LUNA 1기</h1>
+  <h1 class="member__grade"><i class="fas fa-moon member__icon"></i>LUNA 1기</h1>
   <div class="member__container">
     {% for member in first_members %}
     {% include profile.html member=member %}
