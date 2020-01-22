@@ -21,15 +21,11 @@
 
     @media screen and (orientation: landscape) {
       width: 35vw;
-      margin: 0 0 11rem 17rem;
+      margin: 0 0 7rem 17rem;
     }
 
     @media screen and (orientation: landscape) and (max-height: 500px) {
       display: none;
-    }
-
-    @media screen and (orientation: landscape) and (max-width: 800px) {
-      margin: 0 auto 7rem auto;
     }
   }
 
