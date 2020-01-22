@@ -1,0 +1,30 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10rem 0;
+  width: 50%;
+  margin: 0 auto;
+
+  &__container {
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    margin-right: 0.7rem;
+  }
+
+  &__question {
+    color: #e9ecef;
+    font-weight: bold;
+    font-size: 2rem;
+
+    margin: 0;
+  }
+
+  &__answer {
+    color: #ced4da;
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+}

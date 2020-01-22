@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<main class="faq">
+  {% for item in page.items %}
+  <div class="faq__container">
+    <h2 class="faq__question"><i class="fas fa-moon faq__icon"></i>{{item.q}}</h2>
+    <p class="faq__answer">{{item.a}}</p>
+  </div>
+  {% endfor %}
+</main>
