@@ -4,4 +4,16 @@ layout: default
 <main class="home">
   <img class="home__bg-img" src="/assets/img/main_bg.png">
   <img class="home__cali-img" src="/assets/img/cali.png">
+  <footer class="home__footer">
+    <ul class="home__social-list">
+      {% for item in page.social %}
+      <li class="home__social-item">
+        <a href="{{item.url}}">
+          <i class="fab {{item.icon}}"></i>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <small class="home__copyright">Copyright&copy; 2020 LUNA All rights reserved.</small>
+  </footer>
 </main>

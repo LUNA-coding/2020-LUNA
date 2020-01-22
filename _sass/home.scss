@@ -9,22 +9,6 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-
-    // @media screen and (max-width: 1400px) {
-    //   bottom: -7rem;
-    // }
-
-    // @media screen and (max-width: 1000px) {
-    //   bottom: -5rem;
-    // }
-
-    // @media screen and (max-width: 700px) {
-    //   bottom: -2rem;
-    // }
-
-    // @media screen and (max-height: 400px) {
-    //   bottom: -3rem;
-    // }
   }
 
   &__cali-img {
@@ -47,5 +31,38 @@
     @media screen and (orientation: landscape) and (max-width: 800px) {
       margin: 0 auto 7rem auto;
     }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  &__social-list {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  &__social-item {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+
+    a {
+      color: #e9ecef;
+      text-decoration: none;
+    }
+  }
+
+  &__copyright {
+    color: #adb5bd;
+    font-size: 0.7rem;
   }
 }
