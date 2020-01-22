@@ -2,9 +2,17 @@
 layout: default
 ---
 <main class="member">
+  {% assign third_members = site.members | where: "luna", 3.0 %}
   {% assign second_members = site.members | where: "luna", 2.0 | sort: "grade" %}
   {% assign first_members = site.members | where: "luna", 1.0 | sort: "name" %}
   {% assign honorary_members = site.members | where: "luna", 0.0 | sort: "name" %}
+
+  <h1 class="member__grade"><i class="fas fa-moon"></i> LUNA 3기</h1>
+  <div class="member__container">
+    {% for member in third_members %}
+    {% include profile.html member=member %}
+    {% endfor %}
+  </div>
 
   <h1 class="member__grade"><i class="fas fa-moon"></i> LUNA 2기</h1>
   <div class="member__container">
