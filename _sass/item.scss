@@ -12,6 +12,7 @@
 .item-card {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   width: 60%;
   margin-bottom: 5rem;
@@ -59,7 +60,7 @@
 
     &__name {
       text-align: center;
-      margin-top: 1rem;
+      margin: 1rem 0;
     }
   }
 }
