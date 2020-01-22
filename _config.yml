@@ -37,10 +37,6 @@ navigation:
     url: /award.html
     icon: fa-trophy
 
-  - title: Gallery
-    url: /gallery.html
-    icon: fa-images
-
   - title: FAQ
     url: /faq.html
     icon: fa-question-circle

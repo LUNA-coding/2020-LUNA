@@ -1,18 +1,7 @@
 <nav class="nav">
+  <a href="{{ site.baseurl }}/"><img class="nav__logo" src="/assets/img/luna_logo.png"></a>
   <ul class="nav__menu nav__menu--left">
-    {% for item in site.navigation limit:3 %}
-    {% assign class = nil %}
-    {% if page.url contains item.url %}
-    {% assign class = 'nav__menu-item--current' %}
-    {% endif %}
-    <li class="nav__menu-item {{class}}">
-      <a href="{{item.url}}">{{item.title}}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  <a href="{{ site.baseurl }}/../"><img class="nav__logo" src="/assets/img/luna_logo.png"></a>
-  <ul class="nav__menu nav__menu--right">
-    {% for item in site.navigation offset:3 limit:3 %}
+    {% for item in site.navigation %}
     {% assign class = nil %}
     {% if page.url contains item.url %}
     {% assign class = 'nav__menu-item--current' %}
