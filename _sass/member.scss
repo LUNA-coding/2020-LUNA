@@ -62,7 +62,8 @@
   &__image {
     flex: 0;
     width: 100%;
-    object-fit: contain;
+    height: 19rem;
+    object-fit: cover;
 
     border-radius: 40px;
   }

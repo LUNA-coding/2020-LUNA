@@ -1,3 +1,16 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, -30px);
+  }
+  60% {
+    transform: translate(-50%, -15px);
+  }
+}
+
 .luna {
   color: #f8f9fa;
 
@@ -69,6 +82,15 @@
 
     border-left: 2px solid #868e96;
     padding-left: 1rem;
+  }
+
+  &__arrow {
+    animation: bounce 2s infinite;
+
+    position: absolute;
+    left: 50%;
+    bottom: 3rem;
+    transform:translateX(-50%);
   }
 
   @media screen and (max-width: 1200px) {
