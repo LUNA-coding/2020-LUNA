@@ -126,7 +126,10 @@
 
 .third {
   .number {
-    line-height: 20rem;
+    @media screen and (min-width: 800px) {
+      line-height: 20rem;
+    }
+
     background-image: url('/assets/img/items.png');
   }
 }
@@ -139,7 +142,10 @@
 
 .fifth {
   .number {
-    line-height: 16rem;
+    @media screen and (min-width: 800px) {
+      line-height: 16rem;
+    }
+
     background-image: url('/assets/img/smtm.png');
     font-size: 7rem;
   }
@@ -169,6 +175,10 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media screen and (max-height: 560px) {
+    font-size: 7rem;
+  }
 }
 
 .to-animate {
