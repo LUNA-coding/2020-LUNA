@@ -14,11 +14,11 @@ new fullpage('.luna', {
     }
     else if (dest.index === 2) {
       selector = ".third";
-      destNum = 23;
+      destNum = 29;
     }
     else if (dest.index === 3) {
       selector = ".fourth";
-      destNum = 31;
+      destNum = 37;
     }
     else if (dest.index === 4) {
       selector = ".fifth";
