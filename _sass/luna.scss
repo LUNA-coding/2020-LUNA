@@ -91,6 +91,10 @@
     left: 50%;
     bottom: 3rem;
     transform:translateX(-50%);
+
+    @media screen and (max-height: 500px) {
+      visibility: hidden;
+    }
   }
 
   @media screen and (max-width: 1200px) {
@@ -148,7 +152,7 @@
 
 .third {
   .number {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-height: 500px) {
       line-height: 20rem;
     }
 
@@ -164,7 +168,7 @@
 
 .fifth {
   .number {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-height: 500px) {
       line-height: 16rem;
     }
 
@@ -210,4 +214,14 @@
   &--active {
     opacity: 1;
   }
+}
+
+@media screen and (max-width: 700px) {
+  #fp-nav {
+    display: none;
+  }
+}
+
+#fp-nav ul li a span {
+  background-color: white !important;
 }

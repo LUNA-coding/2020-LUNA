@@ -5,6 +5,8 @@ new fullpage('.luna', {
   autoScrolling: true,
   verticalCentered: true,
   fitToSection: false,
+  navigation: true,
+  scrollOverflow: true,
   onLeave: function(origin, dest, dir) {
     var selector = "";
     var destNum = 0;
