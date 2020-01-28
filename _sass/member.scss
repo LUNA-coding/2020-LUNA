@@ -43,16 +43,6 @@
   margin: 1.5rem;
   width: 19rem;
 
-  @media screen and (max-width: 544px) {
-    box-shadow: none;
-    background: none;
-    margin: 0rem;
-    padding: 2rem 1rem;
-    border-bottom: 1px dashed #868e96;
-
-    width: 15rem;
-  }
-
   &__tags {
     text-align: center;
     font-family: 'NanumBarunpen', sans-serif;
@@ -107,5 +97,19 @@
     position: relative;
     left: -1.5rem;
     bottom: -1rem;
+  }
+
+  @media screen and (max-width: 544px) {
+    box-shadow: none;
+    background: none;
+    margin: 0rem;
+    padding: 2rem 1rem;
+    border-bottom: 1px dashed #868e96;
+
+    width: 15rem;
+
+    &__image {
+      height: 15rem;
+    }
   }
 }
