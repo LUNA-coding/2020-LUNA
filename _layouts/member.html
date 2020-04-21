@@ -2,8 +2,8 @@
 layout: default
 ---
 <main class="member">
-  {% assign third_members = site.members | where: "luna", 3.0 %}
-  {% assign second_members = site.members | where: "luna", 2.0 | sort: "grade" %}
+  {% assign third_members = site.members | where: "luna", 3.0 | sort: "name" %}
+  {% assign second_members = site.members | where: "luna", 2.0 | sort: "name" %}
   {% assign first_members = site.members | where: "luna", 1.0 | sort: "name" %}
   {% assign honorary_members = site.members | where: "luna", 0.0 | sort: "name" %}
 
